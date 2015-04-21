@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dokodemodoor",
+  "description": "HeavensdoorをChromeから見守るExtension",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "images/icon.jpg"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "content_security_policy": "script-src 'self' https://cdn.socket.io; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "http://ficc-heavensdoor.herokuapp.com/*"
+  ]
+}
